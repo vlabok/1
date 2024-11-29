@@ -1,0 +1,33 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+    
+}
+td { border: 2px solid black; }
+th { border: 2px solid black; }
+
+.c2{
+    width: 75px;
+    height: 600px;
+
+}
+.c3{
+    width: 220;
+    height: 10;
+}
+h2 {
+    text-align: center;
+    color: #008d0c;
+}
+.myPara1 {
+    display: inline-block;
+    color: rgb(255, 199, 56);
+}
+.myPara2 {
+    display: inline-block;
+    color: silver;
+}
+div {
+    text-align: center;
+}

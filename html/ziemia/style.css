@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.glova {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: #374709;
+    display: flex;
+    justify-content: center;
+    font-family: 'Arial', 'Verdana', sans-serif;
+}
+
+.nawias {
+    background-color: #759242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 100px;
+}
+
+.strona {
+    background-color: #F2F2EF;
+    width: 900px;
+    height: 1950px;
+}
+
+h1 {
+    text-align: center;
+    color: #F2F2EF;
+}
+
+h3 {
+    margin: 20px;
+    text-align: center;
+    color: #759242;
+    font-weight: bold;
+}
+
+.planet {
+    position: absolute;
+    display: block;
+    margin-right: 550px;
+    margin-top: 70px;
+}
+
+.zk {
+    margin-top: 30px;
+    margin-left: 60px;
+
+}
+
+.nazwa_kraju {
+    margin: 50px;
+    background-color: #778D45;
+    color: #F2F2EF;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 27px;
+    width: 800px;
+
+}
+
+.obraz {
+    position: absolute;
+}
+
+.text {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-left: 320px;
+    padding-right: 70px;
+    padding-bottom: 30px;
+}
+.nk{
+    padding-left: 10px;
+}
+.inicialy{
+    padding-right: 20px;
+    font-size: 50px;
+    text-align: end;
+    background-color: #759242;
+    height: 60px;
+}

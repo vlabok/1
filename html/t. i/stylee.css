@@ -1,0 +1,22 @@
+
+#gluwa{
+    display: flex;
+    justify-content: center;
+}
+#gluwna1{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#gluwna2{
+    justify-content: center;
+display: flex;
+align-items: center;
+padding-bottom: 10px;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+

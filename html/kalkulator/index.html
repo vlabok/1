@@ -25,19 +25,35 @@
             </p>
             <input id="num2" />
         </div>
+        <div id="example">
+          <h2 id="num1">0</h2>
+          <h2 id="">+</h2>
+          <h2 id="">0</h2>
+          <h2>=</h2>
+          <h2 id="result">0</h2>
+        </div>
         <div id="butons">
+          <button id="num1" onclick= num1 = 1>1</button>
+          <button id="num2" onclick=num2 = 2>2</button>
+          <button id="times" onclick="math='*'">3</button>
+          <button id="divide" onclick="math='/'">4</button>
+          <button id="plus" onclick="math='+'">5</button>
+          <button id="minus" onclick="math='-'">6</button>
+          <button id="times" onclick="math='*'">7</button>
+          <button id="divide" onclick="math='/'">8</button>
+          <button id="times" onclick="math='*'">9</button>
+          <button id="divide" onclick="math='/'">0</button>
             <button id="plus" onclick="math='+'">+</button>
             <button id="minus" onclick="math='-'">-</button>
             <button id="times" onclick="math='*'">x</button>
             <button id="divide" onclick="math='/'">:</button>
-            <button onclick="func()">Посчитать</button>
+            <button onclick="func()">=</button>
           </div>
-          <p id="result"></p>
+          
     </div>
     <script>
         var math; 
         function func() {
-          var result;
           var num1 = Number(document.getElementById("num1").value);
           var num2 = Number(document.getElementById("num2").value);
           switch (math) {

@@ -1,8 +1,30 @@
-#gluwa{
-    background-color: brown;
+#gluwa {
+    display: flex;
+    justify-content: center;
+}
+
+#gluwna {
+    
+    justify-content: center;
+    display: flex;
     align-items: center;
 }
-#gluwna1{
-display: flex;
-align-items: center;
+
+#gluwna2 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#butons {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+ 
+body{
+    color:orange;
+    background-color: rgb(0, 0, 0);
 }

@@ -1,36 +1,59 @@
-
 :root {
-    --dark-blue: #bd6b73;
-    --light-blue: #bbb6df;
+    --dark: #454545;
+    --light: #d5d5d5;
 }
-
 body {
+    
     overflow: hidden;
-    align-items: center;
-    background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
+    align-items: center;    
     display: flex;
-    height: 100vh;
     justify-content: center;
 }
 
+.bg0{
+    position: fixed; /* Обязательно для работы z-index */
+    z-index: 0;
+    background-color: #d5d5d5;
+    width: 100%;
+    height: 110%;
+}
+.bg1{
+    position: absolute; /* Обязательно для работы z-index */
+    z-index: 1;
+    background: url(bg1.png);
+    width: 1920px;
+    height: 1080px;
+}
+.foreground{
+    z-index: 3;
+    margin-top: 30px;
+    border-radius: 40px;
+    position: absolute;
+    opacity: 0.5;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height:350px;
+}
+.container{
+    z-index: 4;
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+}
 div {
-
     margin-top: 15px;
 }
-
 .login {
-    box-shadow: 0px 10px 30px black;
-    background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
-    border: 0px solid black;
-    width: 200px;
-    height: 30px;
-    border-radius: 10px;
-}
-
-.password {
     text-align: 20px;
     box-shadow: 0px 10px 30px black;
-    background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
+    background: black;
     border: 0px solid black;
     border-radius: 10px;
     width: 200px;
@@ -38,9 +61,28 @@ div {
     box-shadow: 20%;
 }
 
-a {
+#password {
     color: white;
-    text-decoration: none;
+    text-align: 20px;
+    box-shadow: 0px 10px 30px black;
+    background: black;
+    border: 0px solid black;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    box-shadow: 20%;
+}
+
+#user {
+    color: white;
+    text-align: 20px;
+    box-shadow: 0px 10px 30px black;
+    background: black;
+    border: 0px solid black;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    box-shadow: 20%;
 }
 
 button {
@@ -49,22 +91,12 @@ button {
     box-shadow: 0 10px 30px black;
     border-radius: 15px;
     color: white;
-    background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
     border: 0px solid black;
     overflow: hidden;
     position: relative;
 }
-button::after {
-    background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
-    content: '';
-    height: 80px;
-    left: -20px;
-    position: absolute;
-    top: 0px;
-    transform: skewX(15deg);
-    width: 20px;
-    transition: transform 1s;
-}
+
+
 
 button:hover::after {
     transform: translateX(100px);
@@ -78,13 +110,6 @@ form {
     width: 350px;
     height: 300px;
 
-}
-
-.icon-user {
-    color:  black;
-}
-.icon-key {
-    color: black;
 }
 
 ::placeholder {
@@ -115,9 +140,10 @@ form {
 }
 
 .ball {
+    opacity: 0.5;
     width: 150px;
     height: 150px;
-    background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
+    background: linear-gradient(to right top, var(--dark), var(--light));
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -126,10 +152,11 @@ form {
 }
 
 .ball2 {
+    opacity: 0.5;
     left: 10%;
     width: 300px;
     height: 300px;
-    background: linear-gradient(to right top, var(--dark-blue), var(--light-blue));
+    background: linear-gradient(to right top, var(--dark), var(--light));
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -139,13 +166,11 @@ form {
 
 .line {
     border-radius: 20%;
-    width: 80%;
+    width: 230px;
     height: 3px;
     background: #fcfcff;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 40px;
 }
+
 .icon {
     width: 150px;
     height: 100px;
@@ -155,12 +180,4 @@ input:focus::placeholder {
     transition: transform 0.3s linear, opacity 0.3s linear;
     opacity: 0;
     transform: translateX(50px);
-}
-.user {
-    width: 20px;
-    height: 20px;
-}
-.lock {
-    width: 20px;
-    height: 20px;
 }

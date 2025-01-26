@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a">
+    <button onclick="go()">go</button>
+    <p id="printt"></p>
+    <script>
+        function go(){
+            var kot= "kot";
+            var input = document.getElementById('a');
+            var value = input.value;
+            var length = value.length;
+            var taktak = " - wyraz ma co najmniej 6 znaków i konczy sie napisem kot"
+            var taknie = " - wyraz ma co najmniej 6 znaków, ale nie konczy sie napisem kot"
+            var nietak = " - wyraz nie ma co najmniej 6 znakow, ale konczy sie napisem kot"
+            var nienie = " - wyraz nie ma co najmniej 6 znaków i nie kończy się napisem 'kot'";
+            if(length === 6 && value.slice(-3) === kot){
+                alert(value + taktak);
+            }
+            else if(length < 6 && value.slice(-3) === kot){
+                alert(value + taktak);
+            }
+            else if(length === 6 && value.slice(-3) != kot){
+                alert(value + taktak);
+            }else {
+                alert(value + nienie);
+            }
+        }
+    </script>
+</body>
+</html>

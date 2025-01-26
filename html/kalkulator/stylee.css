@@ -1,38 +1,46 @@
-#gluwa {
-    display: flex;
-    justify-content: center;
-}
 
-#gluwna {
+#orange{
+    background-color: #ff9f0a;
+}
+#grej{
     
-    justify-content: center;
+    background-color: #5c5c5f;
+
+}#gluwa {
+    font-size: 30px;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
-#gluwna2 {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    padding-bottom: 10px;
+input[type="text"] {
+    padding: 20px 0px;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
 }
 
-#butons {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    padding-bottom: 10px;
+input[type="button"] {
+    width: 100%;
+    padding: 20px 27px;
+    background-color: #2a2a2c;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 35px;
+    border: none;
+    
 }
-
-
-#example {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    padding-bottom: 10px;
-}
- 
-body{
-    color:orange;
+body {
+    color: #ff9f0a;
     background-color: rgb(0, 0, 0);
+}
+table{
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
 }

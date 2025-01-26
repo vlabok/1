@@ -9,22 +9,41 @@
 </head>
 
 <body>
+    <div class="bg0"></div>
+    <div class="bg1"></div>
     <div class="ball"></div>
     <div class="ball2"></div>
-    <form>
+    <div class="foreground"></div>
+    <div class="container">
         <img class="icon" src="icon.png" alt="icon">
         <div>
-            <input  placeholder="user" class="login" /> 
-            <img class="user" src="user.png" alt="user">
+            <input placeholder="user" id="user" />
         </div>
         <div>
-            <input  placeholder="password" class="password" />
-            <img class="lock" src="lock.png" alt="lock">
+            <input placeholder="password" id="password" />
         </div>
         <div class="line"></div>
         <div>
-            <button><a href="https://i1.sndcdn.com/artworks-X4pHdmo8KFVSGxyG-eyhFGQ-t500x500.jpg">bober</a></button>
-    </form>
+            <button class="login" onclick="login()">login</button>
+        </div>
+    </div>
+    <script>
+        function login() {
+            let user = "vlabo";
+            let password = "12345678";
+            let password_input = document.getElementById("password").value;
+            let user_input = document.getElementById("user").value;
+            if (user === user_input && password === password_input) {
+                window.location.href = 'https://google.com';
+            }
+            else if (user !== user_input) {
+                document.getElementById("user").value = "user error";
+            }
+            else if (password !== password_input) {
+                document.getElementById("password").value = "password error";
+            }
+        }
+    </script>
 </body>
 
 </html>

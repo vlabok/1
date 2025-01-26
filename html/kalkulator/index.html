@@ -2,77 +2,59 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROSTE DZIAŁANIA</title>
-    <link rel="stylesheet" href="stylee.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Calculator</title>
+  <link rel="stylesheet" href="stylee.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+    integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+    integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
 </head>
 
 <body>
-    <div class="strona">
-        <div id="gluwa">
-            <h1>PROSTE DZIAŁANIA</h1>
-        </div>
-        <div id="gluwna">
-            <p>
-                podaj pierwszą liczbę:
-            </p>
-            <input id="num1" />
-        </div>
-        <div id="gluwna2">
-            <p>
-                podaj drugą liczbę:
-            </p>
-            <input id="num2" />
-        </div>
-        <div id="example">
-          <h2 id="num1">0</h2>
-          <h2 id="">+</h2>
-          <h2 id="">0</h2>
-          <h2>=</h2>
-          <h2 id="result">0</h2>
-        </div>
-        <div id="butons">
-          <button id="num1" onclick= num1 = 1>1</button>
-          <button id="num2" onclick=num2 = 2>2</button>
-          <button id="times" onclick="math='*'">3</button>
-          <button id="divide" onclick="math='/'">4</button>
-          <button id="plus" onclick="math='+'">5</button>
-          <button id="minus" onclick="math='-'">6</button>
-          <button id="times" onclick="math='*'">7</button>
-          <button id="divide" onclick="math='/'">8</button>
-          <button id="times" onclick="math='*'">9</button>
-          <button id="divide" onclick="math='/'">0</button>
-            <button id="plus" onclick="math='+'">+</button>
-            <button id="minus" onclick="math='-'">-</button>
-            <button id="times" onclick="math='*'">x</button>
-            <button id="divide" onclick="math='/'">:</button>
-            <button onclick="func()">=</button>
-          </div>
-          
-    </div>
-    <script>
-        var math; 
-        function func() {
-          var num1 = Number(document.getElementById("num1").value);
-          var num2 = Number(document.getElementById("num2").value);
-          switch (math) {
-            case '+':
-              result = num1 + num2;
-              break;
-            case '-':
-              result = num1 - num2;
-              break;
-            case '*':
-              result = num1 * num2;
-              break;
-            case '/':
-              result = num1 / num2;
-              break;
-          }
-          document.getElementById("result").innerHTML = result;
-        }
-      </script>
-</body>
 
+  
+    <div id="gluwa">
+      <h1>JavaScript Calculator</h1>
+    </div>
+    <table id="calcu">
+      <tr>
+        <td colspan="3">
+          <input type="text" id="result" />
+        </td>
+        <td><input id="orange" type="button" class="orange"value="=" onclick="solve()"> </td>
+      </tr>
+      <tr>
+        <td><input id="grej" type="button" value="0" onclick="dis('0')" onkeydown="myFunction(event)"> </td>
+        <td><input id="grej"type="button" value="." onclick="dis('.')" onkeydown="myFunction(event)"> </td>
+        <td><input id="grej" type="button" value="c" onclick="clr()"></td>
+        <td><input id="orange" type="button" value="/" onclick="dis('/')" onkeydown="myFunction(event)"> </td>
+      </tr>
+      <tr>
+        <td><input type="button" value="7" onclick="dis('7')" onkeydown="myFunction(event)"> </td>
+        <td><input type="button" value="8" onclick="dis('8')" onkeydown="myFunction(event)"> </td>
+        <td><input type="button" value="9" onclick="dis('9')" onkeydown="myFunction(event)"> </td>
+        <td><input id="orange" type="button" value="+" onclick="dis('+')" onkeydown="myFunction(event)"> </td>
+      </tr>
+      <tr>
+        <td><input type="button" value="4" onclick="dis('4')" onkeydown="myFunction(event)"> </td>
+        <td><input type="button" value="5" onclick="dis('5')" onkeydown="myFunction(event)"> </td>
+        <td><input type="button" value="6" onclick="dis('6')" onkeydown="myFunction(event)"> </td>
+        <td><input id="orange" type="button" value="-" onclick="dis('-')" onkeydown="myFunction(event)"> </td>
+      </tr>
+      <tr>
+        <td><input type="button" value="1" onclick="dis('1')" onkeydown="myFunction(event)"> </td>
+        <td><input type="button" value="2" onclick="dis('2')" onkeydown="myFunction(event)"> </td>
+        <td><input type="button" value="3" onclick="dis('3')" onkeydown="myFunction(event)"> </td>
+        <td><input id="orange" type="button" value="*" onclick="dis('*')" onkeydown="myFunction(event)"> </td>
+      </tr>
+      
+    </table>
+  
+  <script src="script.js" defer></script>
+</body>
 </html>

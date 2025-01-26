@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="a">
+    <input type="number" id="b">
+    <input type="number" id="c">
+    <button onclick="math()">math</button>
+    <p id="number"></p>
+    <script>
+        function math() {
+            var a = Number(document.getElementById('a').value);
+            var b = Number(document.getElementById('b').value);
+            var c = Number(document.getElementById('c').value);
+            var numberElement = document.getElementById('number').value;
+            if (a > b && a > c){
+                numberElement.innerText = "Наибольшее число: " + a;
+            }
+            else if (b > a && b > c){
+                number.innerText = "Наибольшее число: " + b;
+            }
+            else if (c > b && c > a){
+                number.innerText = "Наибольшее число: " + c;
+            } else {
+            numberElement.innerText = "Есть несколько равных наибольших чисел.";
+        }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+body {
+    background-color: #F6E5DC;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#baner {
+    background-color: #2F180C;
+    text-align: center;
+    color: khaki;
+    height: 60px;
+    line-height: 60px;
+}
+
+#panel-lewy {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+#panel-prawy {
+    font-size: 150%;
+    padding: 70px;
+    float: right;
+}
+
+#panel-dolny {
+    background-color: #D0B6A8;
+    text-align: center;
+    padding: 30px;
+    clear: both;
+}
+
+#stopka {
+    background-color: #2F180C;
+    color: khaki;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+button {
+    margin: 10px;
+    padding: 5px;
+    background-color: #2F180C;
+    color: khaki;
+    border: none;
+    cursor: pointer;
+}

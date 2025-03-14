@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+<body>
+    <input id="ilosc" type="text" >
+    <button onclick="sprawdzic()">click</button>
+    <script>
+         function sprawdzic(){
+            var x = document.getElementById("ilosc").value; 
+            
+            if(x.length > 0){
+                let koniec = x[x.length -1]
+                alert("Последний символ: " + koniec);
+            }else{
+                alert("Введите текст!")
+            }
+         }
+    </script>
+</body>
+</html>

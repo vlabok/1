@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+<body>
+    <input id="num1" type="number">
+    <input id="num2" type="number">
+    <button onclick="math()">click</button>
+    <script>
+        function math(){
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            
+            if (num1 % num2 === 0){
+                alert("bez koncovki: " + num1/num2)
+            }
+            else if (num1 % num2 != 0){
+                alert("z koncovkoj: " + num1/num2)
+            }
+        }
+    </script>
+</body>
+</html>

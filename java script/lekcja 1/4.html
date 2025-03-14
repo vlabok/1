@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<body>
+    <input id="ilosc" type="number" >
+    <button onclick="sprawdzic()">click</button>
+    <script>
+         function sprawdzic(){
+            var x = Number(document.getElementById("ilosc").value); 
+           if(x % 2 === 0){
+            alert("чётное число")
+           }else{
+            alert("не чётное число")
+           }
+         }
+    </script>
+</body>
+</html>

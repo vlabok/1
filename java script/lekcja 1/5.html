@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+<body>
+    <input id="text1" type="text" >
+    <input id="text2" type="text" >
+    <button onclick="sprawdzic()">click</button>
+    <script>
+         function sprawdzic(){
+            var text1 = document.getElementById("text1").value; 
+            var text2 = document.getElementById("text2").value; 
+            var firstChar = text1.charAt(0);
+            var drugieChar = text2.charAt(0);
+            if(text1.length > 0 && text2.length > 0){
+                if(firstChar === drugieChar){
+                    alert("dwie pierwszy litery to: " + firstChar)
+                }else{
+                    alert("dwie pierwszy litery nie sa edentyczny")
+                }
+            }else{
+                alert("Введите текст!")
+            }
+         }
+    </script>
+</body>
+</html>

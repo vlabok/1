@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+</head>
+<body>
+    <input id="text1" type="text" >
+    <button onclick="sprawdzic()">click</button>
+    <script>
+         function sprawdzic(){
+            var text = document.getElementById("text1").value; 
+            var firstChar = text[text.length -1];
+            var twoChar = text[text.length -2];
+            if(text.length > 0 ){
+                if(firstChar != "ь" && firstChar != "ы" && firstChar != "ъ"){
+                    alert(firstChar)
+                }else{
+                    alert(twoChar)
+                }
+            }else{
+                alert("Введите текст!")
+            }
+         }
+    </script>
+</body>
+</html>

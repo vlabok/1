@@ -1,0 +1,14 @@
+Zapytanie 1:
+SELECT id, nazwa, wystepowanie FROM Ryby WHERE drapiezna = 1;
+
+Zapytanie 2:
+SELECT Ryby_id, wymiar_ochronny FROM Okres_ochronny WHERE wymiar_ochronny < 30;
+
+Zapytanie 3:
+SELECT Ryby.nazwa, Lowisko.akwen, Lowisko.wojewodztwo
+FROM Ryby
+JOIN Lowisko ON Ryby.id = Lowisko.Ryby_id
+WHERE Lowisko.typ = 'rzeka';
+
+Zapytanie 4:
+ALTER TABLE Ryby ADD dobowy_limit TINYINT UNSIGNED;

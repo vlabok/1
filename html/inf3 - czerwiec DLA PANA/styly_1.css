@@ -28,11 +28,11 @@ body {
 }
 
 .left-block:first-child {
-    height: 150px;
+    height: 350px;
 }
 
 .left-block:nth-child(2) {
-    height: 300px;
+    height: 600px;
 }
 
 .right-block {
@@ -50,26 +50,6 @@ body {
     margin: 20px;
 }
 
-/* Table styles */
-.table {
-    width: 80%;
-    border-collapse: collapse;
-    margin: auto;
-}
-
-.table th, .table td {
-    border: 1px solid #4FB3BF;
-    padding: 4px;
-    text-align: left;
-}
-
-.table th {
-    background-color: #b2dfdb;
-}
-
-.table tr:hover {
-    background-color: #4FB3BF;
-}
 
 /* Links */
 .download-link {
@@ -80,4 +60,38 @@ body {
 /* Footer */
 .footer {
     font-size: 130%;
+}
+/* Table styles */
+table {
+    width: 60%; /* Szerokość tabeli */
+    max-height: 300px; /* Maksymalna wysokość tabeli */
+    overflow-y: auto; /* Przewijanie w pionie */
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+
+table th, table td {
+    padding: 6px; /* Zmniejszone odstępy dla mniejszej wysokości */
+    text-align: left;
+    font-size: 0.9em;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #00838F;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+table tr:hover {
+    background-color: #e0f7fa;
+}
+
+table tr:last-child td {
+    border-bottom: none;
 }

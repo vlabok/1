@@ -2,44 +2,75 @@
     --dark: #454545;
     --light: #d5d5d5;
 }
+
 body {
-    
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    align-items: center;    
+    height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
+    background-color: var(--light);
+    position: relative;
 }
 
-.bg0{
-    position: fixed; /* Обязательно для работы z-index */
+.bg0 {
+    position: fixed;
     z-index: 0;
-    background-color: #d5d5d5;
+    background-color: var(--light);
     width: 100%;
-    height: 110%;
+    height: 100%;
 }
-.bg1{
-    position: absolute; /* Обязательно для работы z-index */
+
+.bg1 {
+    position: fixed;
     z-index: 1;
-    background: url(bg1.png);
-    width: 1920px;
-    height: 1080px;
+    background: url(bg1.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
-.foreground{
+
+.ball, .ball2 {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.5;
+    background: linear-gradient(to right top, var(--dark), var(--light));
+}
+
+.ball {
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    animation: moveBall 10s infinite linear;
+    z-index: 2;
+}
+
+.ball2 {
+    width: 300px;
+    height: 300px;
+    top: 0;
+    left: 10%;
+    animation: moveBall2 20s infinite linear;
+    z-index: 2;
+}
+
+.foreground {
     z-index: 3;
-    margin-top: 30px;
     border-radius: 40px;
     position: absolute;
     opacity: 0.5;
     background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 350px;
-    height:350px;
+    height: 350px;
 }
-.container{
+
+.container {
     z-index: 4;
-    position: absolute;
+    position: relative;
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -47,42 +78,20 @@ body {
     width: 350px;
     height: 300px;
 }
+
 div {
     margin-top: 15px;
 }
-.login {
-    text-align: 20px;
-    box-shadow: 0px 10px 30px black;
-    background: black;
-    border: 0px solid black;
-    border-radius: 10px;
-    width: 200px;
-    height: 30px;
-    box-shadow: 20%;
-}
 
-#password {
+input, .login {
     color: white;
-    text-align: 20px;
-    box-shadow: 0px 10px 30px black;
     background: black;
-    border: 0px solid black;
+    border: none;
     border-radius: 10px;
     width: 200px;
     height: 30px;
-    box-shadow: 20%;
-}
-
-#user {
-    color: white;
-    text-align: 20px;
     box-shadow: 0px 10px 30px black;
-    background: black;
-    border: 0px solid black;
-    border-radius: 10px;
-    width: 200px;
-    height: 30px;
-    box-shadow: 20%;
+    text-align: center;
 }
 
 button {
@@ -91,77 +100,14 @@ button {
     box-shadow: 0 10px 30px black;
     border-radius: 15px;
     color: white;
-    border: 0px solid black;
-    overflow: hidden;
+    border: none;
     position: relative;
+    background: black;
+    cursor: pointer;
 }
-
-
 
 button:hover::after {
     transform: translateX(100px);
-}
-
-form {
-    opacity: 0.5;
-    box-shadow: 0 10px 30px black;
-    text-align: center;
-    border-radius: 15px;
-    width: 350px;
-    height: 300px;
-
-}
-
-::placeholder {
-    color: white;
-    text-align: center;
-}
-
-@keyframes moveBall {
-    from {
-        left: -500px;
-    }
-
-    to {
-        left: 100vw;
-    }
-
-}
-
-@keyframes moveBall2 {
-    from {
-        top: -500px;
-    }
-
-    to {
-        top: 100vw;
-    }
-
-}
-
-.ball {
-    opacity: 0.5;
-    width: 150px;
-    height: 150px;
-    background: linear-gradient(to right top, var(--dark), var(--light));
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    animation: moveBall 10s infinite linear;
-}
-
-.ball2 {
-    opacity: 0.5;
-    left: 10%;
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(to right top, var(--dark), var(--light));
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    animation: moveBall2 20s infinite linear;
 }
 
 .line {
@@ -180,4 +126,19 @@ input:focus::placeholder {
     transition: transform 0.3s linear, opacity 0.3s linear;
     opacity: 0;
     transform: translateX(50px);
+}
+
+::placeholder {
+    color: white;
+    text-align: center;
+}
+
+@keyframes moveBall {
+    from { left: -500px; }
+    to { left: 100vw; }
+}
+
+@keyframes moveBall2 {
+    from { top: -500px; }
+    to { top: 100vh; }
 }

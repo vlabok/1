@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bober</title>
     <link rel="stylesheet" href="login.css">
 </head>
-
 <body>
     <div class="bg0"></div>
     <div class="bg1"></div>
@@ -16,16 +14,10 @@
     <div class="foreground"></div>
     <div class="container">
         <img class="icon" src="icon.png" alt="icon">
-        <div>
-            <input placeholder="user" id="user" />
-        </div>
-        <div>
-            <input placeholder="password" id="password" />
-        </div>
+        <div><input placeholder="user" id="user" /></div>
+        <div><input placeholder="password" id="password" type="password" /></div>
         <div class="line"></div>
-        <div>
-            <button class="login" onclick="login()">login</button>
-        </div>
+        <div><button class="login" onclick="login()">login</button></div>
     </div>
     <script>
         function login() {
@@ -35,15 +27,12 @@
             let user_input = document.getElementById("user").value;
             if (user === user_input && password === password_input) {
                 window.location.href = 'https://google.com';
-            }
-            else if (user !== user_input) {
+            } else if (user !== user_input) {
                 document.getElementById("user").value = "user error";
-            }
-            else if (password !== password_input) {
+            } else if (password !== password_input) {
                 document.getElementById("password").value = "password error";
             }
         }
     </script>
 </body>
-
 </html>

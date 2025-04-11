@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wędkowanie</title>
+    <link rel="stylesheet" href="styl_1.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Portal dla wędkarzy</h1>
+    </div>
+
+    <div class="container">
+        <section class="left-block">
+            <h3>Ryby zamieszkujące rzeki</h3>
+            <!-- Skrypt PHP wyświetlający listę -->
+            <?php include 'skrypt1.php'; ?>
+
+            <h3>Ryby drapieżne naszych wód</h3>
+            <!-- Skrypt PHP wyświetlający tabelę -->
+            <?php include 'skrypt2.php'; ?>
+        </section>
+
+        <section class="right-block">
+            <img src="ryba1.jpg" alt="Sum">
+            <a href="kwerendy.txt" class="download-link">Pobierz kwerendy</a>
+        </section>
+    </div>
+
+    <div class="footer">
+        <p>Stronę wykonał: 00000000000</p>
+    </div>
+</body>
+</html>

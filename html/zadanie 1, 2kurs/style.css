@@ -42,3 +42,4 @@ button:hover{
 @keyframes moveBall{
     from{ top: 0;}
     to{top: calc(100vh - 100px)};
+}

@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#bbbfc7, #005eff);
+    background: linear-gradient(to ri ght, #bbbfc7, #005eff);
     height: 100vh;
 }
 
@@ -16,21 +16,26 @@ body {
     flex-direction: column;
     gap: 10px;
 }
-input{
+
+input {
     border-radius: 5px
 }
-button{
+
+button {
     border-radius: 5px;
     background-color: #005eff;
     color: white;
     cursor: pointer;
 }
-button:hover{
+
+button:hover {
     background-color: black;
     transition: 0.3s ease;
 }
+
 .ball {
     margin-right: 100px;
+    top: 0;
     position: absolute;
     border-radius: 50%;
     width: 100px;
@@ -39,7 +44,13 @@ button:hover{
     z-index: -1;
     animation: moveBall 2s infinite alternate;
 }
-@keyframes moveBall{
-    from{ top: 0;}
-    to{top: calc(100vh - 100px)};
+
+@keyframes moveBall {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(calc(100vh - 100px));
+    }
 }

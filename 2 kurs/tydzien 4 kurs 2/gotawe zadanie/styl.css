@@ -1,0 +1,78 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+  --baner-color: #829eb9;
+  --panel-lewy-color: #b3c6d9;
+  --panel-prawy-color: #e0e9f1;
+  --obraz-border-color: #b3c6d9;
+  --naglowek-tabeli-bg: #b3c6d9;
+  --hover-bg: blue;
+  --hover-color: white;
+}
+
+.block_gorny {
+  background-color: var(--baner-color);
+  height: 50px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.block_levy {
+  background-color: var(--panel-lewy-color);
+  height: 600px;
+  width: 25%;
+  float: left;
+}
+
+.block_pravy {
+  background-color: var(--panel-prawy-color);
+  height: 600px;
+  width: 75%;
+  float: left;
+  text-align: center;
+}
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stopka {
+  background-color: var(--baner-color);
+  font-family: Arial, sans-serif;
+  text-align: right;
+  clear: both;
+  
+}
+
+img {
+  margin: 30px;
+  padding: 10px;
+  border: 2px dashed var(--obraz-border-color);
+}
+
+table {
+  margin: 30px;
+  border: 2px solid black;
+  width: 70%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: var(--naglowek-tabeli-bg);
+  border: 2px solid black;
+}
+
+td {
+  border: 2px solid black;
+}
+tr:hover {
+  background-color: var(--hover-bg);
+  color: var(--hover-color);
+}
+p {
+  margin: 30px;
+}

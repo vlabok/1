@@ -1,0 +1,9 @@
+<svg width="450" height="450" viewBox="0 0 450 450" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="225" cy="225" r="221" fill="none" stroke="red" stroke-width="8" />
+    <text x="225" y="275" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="450" fill="red"
+        pointer-events="none">?</text>
+    <text x="225" y="200" text-anchor="middle" font-family="Arial" font-size="56" fill="blue">
+        Jak silne jest
+        <tspan x="225" dy="60">Twoje hasło?</tspan>
+    </text>
+</svg>

@@ -1,0 +1,28 @@
+body{
+    display: flex;
+}
+.bth-defualt{
+    color: #fff;
+    background-color: #2563eb;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    padding: 0.625rem 1.25rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: box-shadow 0.2s, background-color 0.2;
+    outline: none;
+}
+.bth-defualt:hover{
+    background-color: #1d4ed8;
+}
+.bth-defualt:focus{
+    box-shadow: 0px 0px 0px 4px #93c5fd;
+}
+.bth-defualt:disabled{
+    opacity: 0.5;
+
+
+    
+    cursor: not-allowed;
+}

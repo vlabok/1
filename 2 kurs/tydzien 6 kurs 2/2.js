@@ -1,6 +1,6 @@
 function magiczna_liczba() {
   let r = Math.random() * 100;
-  let a = document.getElementById("a").value;
+  let a = document.getElementById("a").value; // HTMLElemnt lub null
   if (!a) {
     document.getElementById("wynik").innerHTML = "wprowadz danne";
   } else {

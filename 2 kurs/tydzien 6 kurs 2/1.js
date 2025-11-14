@@ -1,7 +1,7 @@
 function pole_trujkonta() {
-    let a = Number(document.getElementById("a").value);
-  let b = Number(document.getElementById("b").value);
-  let c = Number(document.getElementById("c").value);
+    let a = parseFloat(document.getElementById("a").value);
+  let b = parseFloat(document.getElementById("b").value);
+  let c = parseFloat(document.getElementById("c").value);
 
   if (a + b > c && a + c > b && b + c > a) {
     let p = (a + b + c) / 2;

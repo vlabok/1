@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: white;
+  
+}
+.block_gorny {
+  background-image: url(klawiatura.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 120px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.block_centralny {
+  background-color: white;
+}
+.buttons {
+  background-color: #2e1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+button{
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    padding: 5px;
+}
+button:hover{
+    color: white;
+    background-color: #2e1a1a;
+    border: 2px solid white;
+}
+
+table{
+    border: 2px dotted black;
+    margin-left: 80px;
+}
+th, tr{
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    
+}
+
+.block_dolny {
+  background-color: #2e1a1a;
+  color: white;
+}
+ul{
+    margin-left: 95px;
+}

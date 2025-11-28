@@ -1,0 +1,150 @@
+:root {
+    --brown--: #524e4d;
+    --light-grey--: #ebebeb;
+    --whitte--: #ffffff;
+    --litter--: #000000;
+}
+
+body.dark-mode{
+    --brown--: #1f1c2b;
+    --light-grey--: #35277c;
+    --whitte--: #000000;
+    --litter--: #ffffff;
+}
+
+
+* {
+    margin: 0;
+}
+ 
+body {
+    color: var(--litter--);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+#strona {
+    background-color: var(--light-grey--);
+    width: 75%;
+    height: 78%;
+}
+
+div {
+    margin-top: 5px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+#panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40%;
+}
+
+#baner {
+    background-image: url(klawiatura.jpg);
+    
+    width: 99.5%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#link_one {
+    background-color: var(--brown--);
+    width: 99.5%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#link_two {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    height: 100%;
+}
+
+.link_ {
+    border-radius: 15px;
+    background-color: var(--light-grey--);
+    color: var(--brown--);
+    
+    height: 30px;
+    border: 0.5px solid;
+}
+
+.one {
+    color: var(--brown--);
+}
+
+.link_:hover {
+    background-color: var(--brown--);
+    background-color: var(--whitte--);
+    border: 1.5px solid;
+}
+
+.one:hover {
+    background-color: var(--whitte--);
+}
+
+table {
+    text-align: center;
+    margin-top: 0.6%;
+    margin-bottom: 0.6%;
+    margin-left: 5%;
+    border: 1.5px solid;
+    border-style: dotted;
+    width: 60%;
+}
+
+ul {
+    margin-bottom: 0.6%;
+    margin-top: 0.6%;
+    margin-left: 5%;
+}
+
+#autor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brown--);
+    background-color: var(--whitte--);
+    width: 99.5%;
+    height: 70%;
+    font-size: 20px;
+}
+
+#baner_dulny {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
+}
+
+#themeToggle{
+    border-radius: 15px;
+    background-color: var(--light-grey--);
+    color: var(--brown--);
+    height: 30px;
+    border: 0.5px solid;
+}
+#themeToggle:hover{
+    background-color: var(--brown--);
+    background-color: var(--whitte--);
+    border: 1.5px solid;
+}

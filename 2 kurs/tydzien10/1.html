@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      x = 3;
+      function doWork(){
+        console.log("provide magic")
+      }
+      switch (x) {
+        case 1:
+          console.log("przelaczam do dzialu obslugi informacji");
+          break;
+        case 2:
+        case 5:
+        case 8:
+          console.log("hakuje...");
+          break;
+        case 3:
+          alert('haslo: okon');
+          break;
+        case 4:
+        case 6:
+        case 7:
+        case 9:
+          doWork();
+          break;
+
+        case 'secretINput':
+          console.log("secretINput");
+          break;
+      
+      default:
+        console.log("not implemented method");
+          break;
+      }
+
+       
+      
+      if (x === 1) {
+        console.log("przelaczam do dzialu obslugi informacji");
+      }
+      if (x === 2 || x === 5 || x === 8) {
+        console.log("hakuje...");
+      }
+      if (x === 3) {
+        alert('haslo: okon');
+      }
+      if (x === 4 || x === 6 || x === 7 || x === 9) {
+        doWork();
+      }
+      if (x === 'secretINput') {
+        console.log("secretINput");
+      }
+      if (!(x === 1 || x === 2 || x === 5 || x === 8 || x === 3 || x === 4 || x === 6 || x === 7 || x === 9 || x === 'secretINput')) {
+        console.log("not implemented method");
+      }
+
+      // Preferuję case - switch jest bardziej czytelny dla wielu warunków
+    </script>
+  </body>
+</html>
+      
